@@ -9,7 +9,7 @@ es mirar si dos numeros seguidos salen repetidos y si es asi, la nueva sequencia
 sera el valor con las veces que sale repetido. Por consola pedimos al usuario que
 longitud de la cadena quiere y luego introduce el valor de la cadena.
 
--Decoder: Aqui lo que hacemos es la implementacion de la DCT a partir de la libreria
+-DCT: Aqui lo que hacemos es la implementacion de la DCT a partir de la libreria
 opencv.
 
 Por otra parte tambien he añadido las imagenes de los comandos de escala, y la imagen
