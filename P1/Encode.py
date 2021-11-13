@@ -19,15 +19,3 @@ def encode(sequence,n):
             aux_seq[i] = sequence[i];
 
     return  aux_seq;
-
-if __name__ == '__main__':
-
-    sequence = []
-    n = int(input("Introduce una longitud para la cadena : "))
-    print("Introduce una cadena: ");
-    for i in range(0, n):
-        value = int(input())
-        sequence.append(value);
-
-    aux_seq = encode(sequence,n);
-    print(aux_seq)

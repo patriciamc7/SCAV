@@ -1,4 +1,7 @@
-Hay 3 diferentes scripts:
+Hay 4 diferentes scripts:
+
+-Main: Donde pedimos por consola que script queremos ejecutar y pedimos los paramteros
+de los siguientes scripts.
 
 -rgb_yuv: Donde lo que hacemos es pasar valores rgb de 0 a 255, para pasarlos a YUV, 
 y tambien al mismo momento hacemos la conversión de YUV a rgb, para comprobar que
