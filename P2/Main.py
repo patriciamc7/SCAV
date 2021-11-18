@@ -4,7 +4,6 @@ import subprocess
 if __name__ == '__main__':
     while True:
         print("Escoge el script que quieres ejecutar:")
-        print("0- Ver video")
         print("1- Cortar un video")
         print("2- Historgrama YUV")
         print("3- Cambiar la resolucion")
@@ -16,7 +15,7 @@ if __name__ == '__main__':
             N = int(input())
             Cut.cut(N)
         elif (opcion == 2):
-            histogram.read_video()
+            histogram.histogram()
         elif (opcion == 3):
             print("Escoge la resolucion a la que quieres cambiar:")
             print("0- 720p")
@@ -26,14 +25,14 @@ if __name__ == '__main__':
             res = int(input())
             resize.resize(res)
         elif (opcion == 4):
-            print("Escoge en que formato quieres el audio del video:")
-            print("0- Mono")
-            print("1- Mono")
+            print("En que codec quieres cambiar el audio a mono:")
+            print("0- ac")
+            print("1- aac")
             modo = int(input())
             audio.audio(modo)
         elif (opcion == 5):
             print("Has decidido salir")
             exit()
         else:
-            print("opcion no valida")
+            print("Opcion no valida")
 

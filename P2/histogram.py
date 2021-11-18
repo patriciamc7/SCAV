@@ -1,27 +1,5 @@
-import cv2
-import numpy as np
-import matplotlib.pyplot as plt
 import subprocess
-def histogram(frame):
-    frame_yuv = cv2.cvtColor(frame, cv2.COLOR_BGR2YUV);
-    histogram, bin = np.histogram(frame_yuv)
-    plt.figure()
-    plt.title("Histogram YUV")
-    plt.xlabel("YUV values")
-    plt.ylabel("pixels")
-    plt.plot(bin[0:-1],histogram);
-    plt.show();
-    plt.savefig("histogram.jpg");
-    fourcc = cv2.VideoWriter_fourcc(*'MP4V')
-    video = cv2.VideoWriter("histogram.mp4", fourcc, 30, (1920, 1080))
-    video.write(cv2.imread("histogram.jpg"))
-def read_video():
-    subprocess.call(["ffplay","BBB.mp4", "-", "vf", "split=2[a][b]","[b]histogram","format=yuva444p[hh]","[a][hh]overlay"])
 
-
-    #video = cv2.VideoCapture("cut.mp4");
-    #ret, frame = video.read();
-    #histogram(frame);
-
-if __name__ == '__main__':
-    read_video()
+def histogram():
+    subprocess.call(["ffmpeg", "-i", "cut.mp4", "-vf", "split=2[a][b],[b]histogram,format=yuva444p[hh],[a][hh]overlay", "histogram.mp4"])
+    print("Se ha creado el video histogram.mp4")
