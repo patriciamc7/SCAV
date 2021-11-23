@@ -14,7 +14,7 @@ if __name__ == '__main__':
         elif (opcion == 2):
             container.create_container()
         elif (opcion == 3):
-            print("")
+            subprocess.call(["ffprobe", "-i", "output.mp4"])
         elif (opcion == 4):
             subtitles.subtitulos()
         elif (opcion == 5):
