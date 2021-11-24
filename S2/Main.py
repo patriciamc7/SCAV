@@ -1,5 +1,5 @@
 import subprocess
-import  motion_vector, container, subtitles
+import  motion_vector, container, information
 if __name__ == '__main__':
     while True:
         print("Escoge el script que quieres ejecutar:")
@@ -14,12 +14,11 @@ if __name__ == '__main__':
         elif (opcion == 2):
             container.create_container()
         elif (opcion == 3):
-            subprocess.call(["ffprobe", "-i", "output.mp4"])
-        elif (opcion == 4):
-            subtitles.subtitulos()
+            information.information()
+            print("")
+            #subtitles.subtitulos()
         elif (opcion == 5):
             print("Has decidido salir")
             exit()
         else:
             print("Opcion no valida")
-
