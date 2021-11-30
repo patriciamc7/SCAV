@@ -1,5 +1,5 @@
 import subprocess
-import  motion_vector, container, information
+import  motion_vector, container, information, subtitles
 if __name__ == '__main__':
     while True:
         print("Escoge el script que quieres ejecutar:")
@@ -15,8 +15,8 @@ if __name__ == '__main__':
             container.create_container()
         elif (opcion == 3):
             information.information()
-            print("")
-            #subtitles.subtitulos()
+        elif(opcion ==4):
+            subtitles.subtitulos()
         elif (opcion == 5):
             print("Has decidido salir")
             exit()
