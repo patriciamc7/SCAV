@@ -1,4 +1,4 @@
-#SCAV P1:Hay 4 diferentes scripts:
+# SCAV P1:Hay 4 diferentes scripts:
 
 -Main: Donde pedimos por consola que script queremos ejecutar y pedimos los paramteros
 de los siguientes scripts.
@@ -20,7 +20,7 @@ en blanco y negro, he subido dos ya que he probado de aplicar un threshold desde
 ffmpeg con la imagen original y con una imagen que sea grayscale, y para el ejercicio
 de la DCT utilizo la conversion con la grayscale ya que pesa menos.
 
-#SCAV P2: Hay 5 diferentes scripts:
+# SCAV P2: Hay 5 diferentes scripts:
 
 -Main: Donde pedimos por consola que script queremos ejecutar y pedimos los
 paramteros de los siguientes scripts.
@@ -38,7 +38,7 @@ por consola.
 
 Por otra parte tambien he añadido los videos de las ejecuciones, y los audios.
 
-###SCAV S2: 5 diferentes scrpits:###
+# SCAV S2: 5 diferentes scrpits:
 
 -Main: Donde pedimos por consola que script queremos ejecutar y pedimos los
 paramteros de los siguientes scripts.
@@ -55,7 +55,7 @@ informacion que puede ser util.
 -Subtitles: Aqui descargamos subtitulos de internet a partir de un link, y los añadimos
 al video con tal de que se vean en pantalla.
 
-#SCAV S3: 4 diferentes script
+# SCAV S3: 4 diferentes script
 
 -Main: Donde pedimos por consola que script queremos ejecutar y pedimos los
 paramteros de los siguientes scripts.

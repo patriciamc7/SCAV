@@ -2,7 +2,7 @@ import subprocess
 
 def create_container():
 
-    subprocess.call(["ffmpeg","-ss","0", "-i","BBB.mp4", "-c", "copy", "-t",str(60), "cut60.mp4" ]) #quitar audio -an
+    subprocess.call(["ffmpeg","-ss","0", "-i","BBB.mp4", "-c", "copy", "-t",str(60), "cut60.mp4" ])
     subprocess.call(["ffmpeg", "-i", "cut60.mp4", "-c", "copy", "-an", ])
     subprocess.call( ["ffmpeg", "-i", "cut60.mp4", "-f", "mp3", "audio_mp3.mp3"])
     subprocess.call( ["ffmpeg", "-i", "cut60.mp4", "-c:a", "aac","-b:a", "32k","audio_aac.aac"])

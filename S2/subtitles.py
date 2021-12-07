@@ -8,9 +8,5 @@ def subtitulos():
         file.write(url_txt.text)
 
     print("Subtitulos creados en la carpeta")
-    #subprocess.call(["ffmpeg", "-i", "output.mp4", "-map", "0:2", "sub.srt"])
-    subprocess.call(["ffmpeg", "-i", "output.mp4", "-i" , "subtitles.str", "-map", "0", "-map","1:s","-c", "copy","-c:s","mov_text", "subtitles.mp4"])
+    subprocess.call(["ffmpeg", "-i", "output.mp4", "-vf" , "subtitles=subtitles.str", "subtitles.mp4"])
 
-
-if __name__ == '__main__':
-    subtitulos()

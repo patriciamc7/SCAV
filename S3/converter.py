@@ -2,7 +2,6 @@ import subprocess
 
 def converter():
 
-    subprocess.call(["ffmpeg", "-ss", "0:01:00", "-i", "BBB.mp4", "-c", "copy", "-t","3","cut.mp4"])
     print("Escoge la resolucion a la que quieres cambiar:")
     print("0- 720p")
     print("1- 480p")
@@ -10,13 +9,13 @@ def converter():
     print("3- 160x120")
     res = int(input())
     if (res == 0):
-        subprocess.call(["ffmpeg", "-i","cut.mp4", "-s" ,"1280:720", "-c:a", "copy" , "scale.mp4"])
+        subprocess.call(["ffmpeg", "-i","cat.mp4", "-s" ,"1280:720", "-c:a", "copy" , "scale.mp4"])
     elif (res == 1):
-        subprocess.call(["ffmpeg","-i","cut.mp4","-s","720:480", "-c:a","copy", "scale.mp4"])
+        subprocess.call(["ffmpeg","-i","cat.mp4","-s","720:480", "-c:a","copy", "scale.mp4"])
     elif (res == 2):
-        subprocess.call(["ffmpeg", "-i", "cut.mp4","-s" ,"320:240", "-c:a", "copy","scale.mp4"])
+        subprocess.call(["ffmpeg", "-i", "cat.mp4","-s" ,"320:240", "-c:a", "copy","scale.mp4"])
     elif (res == 3):
-        subprocess.call(["ffmpeg","-i", "cut.mp4", "-s","160:120","-c:a", "copy","scale.mp4"])
+        subprocess.call(["ffmpeg","-i", "cat.mp4", "-s","160:120","-c:a", "copy","scale.mp4"])
     else:
         print("opcion no valida");
         exit();
